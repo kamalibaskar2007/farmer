@@ -3,7 +3,11 @@
   "private": true,
   "scripts": {
     "dev": "npm --prefix web run dev",
+    "dev:web": "npm --prefix web run dev",
+    "dev:api": "cd backend && mvn spring-boot:run",
     "build": "npm --prefix web run build",
+    "build:web": "npm --prefix web run build",
+    "build:api": "cd backend && mvn -q -DskipTests package",
     "lint": "npm --prefix web run lint",
     "preview": "npm --prefix web run preview"
   }
